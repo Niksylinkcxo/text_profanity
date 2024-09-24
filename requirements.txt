@@ -19,8 +19,7 @@ dnspython==2.6.1
 email_validator==2.2.0
 emoji==2.12.1
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
-fastapi==0.111.0
-fastapi-cli==0.0.4
+
 filelock==3.15.4
 Flask==3.0.3
 flatbuffers==24.3.25
