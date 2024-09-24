@@ -214,7 +214,6 @@ seaborn==0.12.2
 sentence-transformers==2.2.2
 sentencepiece==0.1.96
 setuptools==75.1.0
-distutils-pytest==0.2.1
 sentry-sdk==2.19.0
 shap==0.40.0
 simplejson==3.19.1
