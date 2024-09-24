@@ -116,6 +116,8 @@ en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_
 # Werkzeug==3.0.3
 # wheel==0.43.0
 # wrapt==1.16.0
+azure-core==1.31.0
+azure-storage-blob==12.23.0
 asttokens==2.4.1
 backports.functools-lru-cache==2.0.0
 blinker==1.8.2
