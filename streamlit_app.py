@@ -109,7 +109,17 @@ PROFANE_WORDS = [
     'suck', 'sucker', 'sucking', 't1tt1e5', 't1tties', 'teabagger', 'testicle', 
     'threesome', 'titt', 'tits', 'titwank', 'tosser', 'tranny', 'trannies', 'turd', 
     'twat', 'vag', 'vagina', 'wank', 'wanker', 'wetback', 'wh0r3', 'whore', 'w0r3', 
-    'wtf', 'yank', 'yiffy', 'z0mg', 'zoophile', 'zoophilia'
+    'wtf', 'yank', 'yiffy', 'z0mg', 'zoophile', 'zoophilia',"fuck", "fuck shit", "cock damn", "bitch piss", "crap bitch", "piss crap",
+    "dick cock", "asshole bastard", "cunt", "asshole", "slut pussy", "bollocks asshole",
+    "dick", "shit", "bitch", "asshole", "pussy", "son of bitch", "Masturbating",
+    "Cock sucker", "Fucking dick", "Screw", "Dick", "damn bloody", "bastard",
+    "fag bugger", "bastard fag", "fag", "douche bollocks", "bloody slut", "arsehole",
+    "bugger darn", "arsehole douche", "damn", "bloody", "Lund", "boor", "gaar",
+    "chut", "choot", "crap", "bastard", "darn", "piss", "cock", "bugger", "douche",
+    "bollocks", "arsehole", "madarchod", "bhen chod", "bhen k lode", "Mother fucker",
+    "Bhosari ke", "chutiya", "Lund", "Haramzada", "Harami", "Haram ka pilla", 
+    "Haram ka jana", "Bhadwa", "Madarchod", "Chutia", "Kutiya", "Gandu", "Randi", 
+    "Rakhail", "Saali", "Bhosari ke", "Dalla", "Mahesh dalle"
 ]
 
 # Initialize Blob Service Client
@@ -178,7 +188,8 @@ if st.button("Check for Profanity"):
                 'label': "1",  # Profanity detected
                 'profane_words': profane_words_string
             }
-            st.write("Profanity detected:", profane_words_string)
+            st.write(f"Profanity detected: {profane_words_string}, Label: {response['label']}")
+
         else:
             # If no profane words are found, classify the text using Hugging Face model
             result = classifier(cleaned_text)
